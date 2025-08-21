@@ -1,0 +1,39 @@
+spring:
+  application:
+   name: afristays
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOriginPatterns:
+              - "http://localhost:*"
+              - "https://localhost:*"
+              - "http://server.trevtechltd.com:*"
+              - "https://server.trevtechltd.com:*"
+              - "https://www.afristays.com"
+              - "https://afristays.com"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+              - PATCH
+            allowedHeaders: "*"
+            allowCredentials: true
+            exposedHeaders:
+              - Authorization
+              - Content-Type
+            maxAge: 3600
+
+server:
+  port: 31304
+  address: 0.0.0.0  # Allow external access
+
+# Enable actuator endpoints for debugging
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,gateway
