@@ -32,9 +32,9 @@ public class AfristaysApiGatewayApplication {
                             .uri("http://localhost:31301"))
                     // Booking Service Routes
                     .route("booking-service", r -> r
-                            .path("/api/bookings/**")
+                            .path("/api/bookings", "/api/bookings/**")
                             .filters(f -> f
-                                    .rewritePath("/api/bookings/(?<remaining>.*)", "/booking-service/api/v1/properties/${remaining}")
+                                    .rewritePath("/api/bookings(?<remaining>.*)", "/booking-service/api/v1/bookings${remaining}")
                                     .addRequestHeader("X-Gateway", "API-Gateway"))
                             .uri("http://localhost:31303"))
                     // Listings Service Routes
