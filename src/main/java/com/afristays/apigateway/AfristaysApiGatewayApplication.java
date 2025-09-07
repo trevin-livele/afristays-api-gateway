@@ -26,7 +26,7 @@ public class AfristaysApiGatewayApplication {
                         .path("/api/v1/auth/**")
                         .filters(f -> f
                                 .addRequestHeader("X-Gateway", "API-Gateway"))
-                        .uri("https://afristays-auth:31301"))
+                        .uri("http://afristays-auth:31301"))
 
                 // Legacy Auth Route (for backward compatibility)
                 .route("auth-service-legacy", r -> r
@@ -34,7 +34,7 @@ public class AfristaysApiGatewayApplication {
                         .filters(f -> f
                                 .rewritePath("/api/auth/(?<remaining>.*)", "/api/v1/auth/${remaining}")
                                 .addRequestHeader("X-Gateway", "API-Gateway"))
-                        .uri("https://afristays-auth:31301"))
+                        .uri("http://afristays-auth:31301"))
 
                 // Booking Service Routes
                 .route("booking-service", r -> r
@@ -42,7 +42,7 @@ public class AfristaysApiGatewayApplication {
                         .filters(f -> f
                                 .rewritePath("/api/bookings(?<remaining>.*)", "/booking-service/api/v1/bookings${remaining}")
                                 .addRequestHeader("X-Gateway", "API-Gateway"))
-                        .uri("https://afristays-booking:31303"))
+                        .uri("http://afristays-booking:31303"))
 
                 // Listings Service Routes
                 .route("listings-service", r -> r

@@ -409,3 +409,31 @@ Caused by: java.io.FileNotFoundException: class path resource [gateway.p12] cann
 2025-09-07 10:46:03.883 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Started AfristaysApiGatewayApplication in 2.308 seconds (process running for 2.923)
 2025-09-07 10:46:18.429 [SpringApplicationShutdownHook] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
 2025-09-07 10:46:18.431 [netty-shutdown] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2025-09-07 10:46:24.909 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication using Java 21.0.5 with PID 35700 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\classes started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:46:24.911 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:46:24.911 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:46:25.631 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=3eef25ab-7107-3190-aaec-d901fd99e043
+2025-09-07 10:46:26.200 [main] DEBUG [] [] o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='test-route', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/test/**}}], filters=[FilterDefinition{name='StripPrefix', args={_genkey_0=1}}], uri=https://httpbin.org, order=0, metadata={}, enabled=true}]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-09-07 10:46:26.364 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-09-07 10:46:26.365 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-09-07 10:46:26.365 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-09-07 10:46:26.481 [main] DEBUG [] [] o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-07 10:46:26.604 [main] INFO  [] [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-09-07 10:46:26.639 [main] DEBUG [] [] o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2025-09-07 10:46:26.864 [main] INFO  [] [] o.s.b.w.e.netty.NettyWebServer - Netty started on port 31304 (https)
+2025-09-07 10:46:26.895 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition test-route applying {_genkey_0=/test/**} to Path
+2025-09-07 10:46:26.906 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition test-route applying filter {_genkey_0=1} to StripPrefix
+2025-09-07 10:46:26.913 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: test-route
+2025-09-07 10:46:26.916 [main] DEBUG [] [] o.s.c.g.filter.GatewayMetricsFilter - New routes count: 1
+2025-09-07 10:46:26.918 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Started AfristaysApiGatewayApplication in 2.39 seconds (process running for 2.931)
