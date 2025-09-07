@@ -1,8 +1,18 @@
 spring:
+  output:
+    ansi:
+      enabled: always
   application:
    name: afristays
   cloud:
     gateway:
+      routes:
+        - id: test-route
+          uri: https://httpbin.org
+          predicates:
+            - Path=/test/**
+          filters:
+            - StripPrefix=1
       globalcors:
         cors-configurations:
           '[/**]':
@@ -42,4 +52,25 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,gateway
+        include: health,gateway,metrics,loggers
+  endpoint:
+    health:
+      show-details: always
+    loggers:
+      enabled: true
+
+# Logging configuration
+logging:
+  level:
+    root: INFO
+    com.afristays.apigateway: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web.reactive: DEBUG
+    org.springframework.http.server.reactive: DEBUG
+    REQUEST_LOGGER: INFO
+    RESPONSE_LOGGER: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{requestId:-}] [%X{clientIp:-}] %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{requestId:-}] [%X{clientIp:-}] %logger{36} - %msg%n"
+  file:
+    name: logs/afristays-gateway.log

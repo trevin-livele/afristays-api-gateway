@@ -1,0 +1,58 @@
+services:
+  afristays-apigateway:
+    image: trevinlivele/afristays-apigateway:latest
+    container_name: afristays-apigateway
+    ports:
+      - "31304:31304"           # publish TLS to the world
+    volumes:
+      - ./certs/gateway.p12:/app/BOOT-INF/classes/gateway.p12:ro
+      - ./logs:/app/logs        # mount logs directory
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - LOGGING_LEVEL_ROOT=INFO
+      - LOGGING_LEVEL_COM_AFRISTAYS_APIGATEWAY=INFO
+      - LOGGING_LEVEL_REQUEST_LOGGER=INFO
+      - LOGGING_LEVEL_RESPONSE_LOGGER=INFO
+      - JAVA_OPTS=-Xmx512m -Xms256m -XX:+UseG1GC -XX:+PrintGCDetails -Xloggc:/app/logs/gc.log
+    depends_on: [afristays-auth, afristays-booking, afristays-listing]
+    networks: [afristays-net]
+
+  afristays-auth:
+    image: trevinlivele/afristays-auth:latest
+    container_name: afristays-auth
+    expose: ["31301"]
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-listing:5432/afristays_listings
+      - SPRING_DATASOURCE_USERNAME=afristays
+      - SPRING_DATASOURCE_PASSWORD=password123
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create-drop
+    networks: [afristays-net]
+
+  afristays-booking:
+    image: trevinlivele/afristays-booking:latest
+    container_name: afristays-booking
+    expose: ["31303"]
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-listing:5432/afristays_listings
+      - SPRING_DATASOURCE_USERNAME=afristays
+      - SPRING_DATASOURCE_PASSWORD=password123
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create-drop
+    networks: [afristays-net]
+
+  afristays-listing:
+    image: trevinlivele/afristays-listing:latest
+    container_name: afristays-listing
+    expose: ["31300"]
+    depends_on: [postgres-listing]
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-listing:5432/afristays_listings
+      - SPRING_DATASOURCE_USERNAME=afristays
+      - SPRING_DATASOURCE_PASSWORD=password123
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create-drop
+      - MANAGEMENT_SERVER_PORT=8080
+      - MANAGEMENT_SERVER_SSL_ENABLED=false
+    networks: [afristays-net]
+
+networks:
+  afristays-net:
+    driver: bridge

@@ -1,0 +1,411 @@
+2025-09-07 10:34:46.059 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.2 with PID 27736 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\afristays-0.0.1-SNAPSHOT.jar started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:34:46.061 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:34:46.063 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:34:47.250 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=f20fe3d4-fc90-3550-a0e3-64d12625fc28
+2025-09-07 10:34:48.520 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-09-07 10:34:48.521 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-09-07 10:34:48.521 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-09-07 10:34:48.521 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-09-07 10:34:48.521 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-09-07 10:34:48.522 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-09-07 10:34:48.522 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-09-07 10:34:48.522 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-09-07 10:34:48.522 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-09-07 10:34:48.522 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2025-09-07 10:34:48.523 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-09-07 10:34:48.524 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-09-07 10:34:48.524 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-09-07 10:34:48.524 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-09-07 10:34:48.697 [main] DEBUG [] [] o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-07 10:34:48.855 [main] INFO  [] [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-09-07 10:34:48.921 [main] DEBUG [] [] o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2025-09-07 10:34:51.320 [main] WARN  [] [] o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-09-07 10:34:51.340 [main] INFO  [] [] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-07 10:34:51.360 [main] ERROR [] [] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 31304 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 31304 or configure this application to listen on another port.
+
+2025-09-07 10:35:21.356 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.2 with PID 36436 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\afristays-0.0.1-SNAPSHOT.jar started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:35:21.360 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:35:21.361 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:35:22.560 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=f20fe3d4-fc90-3550-a0e3-64d12625fc28
+2025-09-07 10:35:23.786 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-09-07 10:35:23.787 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-09-07 10:35:23.787 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-09-07 10:35:23.787 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-09-07 10:35:23.787 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-09-07 10:35:23.789 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-09-07 10:35:23.789 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-09-07 10:35:23.790 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-09-07 10:35:23.790 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-09-07 10:35:23.790 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2025-09-07 10:35:23.791 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-09-07 10:35:23.791 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-09-07 10:35:23.791 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-09-07 10:35:23.791 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-09-07 10:35:24.009 [main] DEBUG [] [] o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-07 10:35:24.164 [main] INFO  [] [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-09-07 10:35:24.219 [main] DEBUG [] [] o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2025-09-07 10:35:26.632 [main] WARN  [] [] o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-09-07 10:35:26.648 [main] INFO  [] [] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-07 10:35:26.671 [main] ERROR [] [] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-09-07 10:35:53.558 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.2 with PID 31144 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\afristays-0.0.1-SNAPSHOT.jar started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:35:53.562 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:35:53.563 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:35:54.787 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=f20fe3d4-fc90-3550-a0e3-64d12625fc28
+2025-09-07 10:35:56.078 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-09-07 10:35:56.078 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-09-07 10:35:56.078 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-09-07 10:35:56.078 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-09-07 10:35:56.080 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-09-07 10:35:56.080 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-09-07 10:35:56.080 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-09-07 10:35:56.080 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-09-07 10:35:56.080 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-09-07 10:35:56.080 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2025-09-07 10:35:56.080 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-09-07 10:35:56.080 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-09-07 10:35:56.081 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-09-07 10:35:56.081 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-09-07 10:35:56.249 [main] DEBUG [] [] o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-07 10:35:56.414 [main] INFO  [] [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-09-07 10:35:56.477 [main] DEBUG [] [] o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2025-09-07 10:35:56.813 [main] INFO  [] [] o.s.b.w.e.netty.NettyWebServer - Netty started on port 9090 (https)
+2025-09-07 10:35:56.855 [main] DEBUG [] [] o.s.c.g.filter.GatewayMetricsFilter - New routes count: 0
+2025-09-07 10:35:56.856 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Started AfristaysApiGatewayApplication in 3.908 seconds (process running for 4.433)
+2025-09-07 10:37:06.491 [SpringApplicationShutdownHook] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 10:37:06.497 [netty-shutdown] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2025-09-07 10:37:23.687 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.2 with PID 29544 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\afristays-0.0.1-SNAPSHOT.jar started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:37:23.688 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:37:23.689 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:37:24.976 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=f20fe3d4-fc90-3550-a0e3-64d12625fc28
+2025-09-07 10:37:25.932 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-09-07 10:37:25.932 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-09-07 10:37:25.932 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-09-07 10:37:25.933 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-09-07 10:37:25.933 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-09-07 10:37:25.933 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-09-07 10:37:25.933 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-09-07 10:37:25.933 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-09-07 10:37:25.933 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-09-07 10:37:25.933 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2025-09-07 10:37:25.933 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-09-07 10:37:25.934 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-09-07 10:37:25.934 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-09-07 10:37:25.934 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-09-07 10:37:26.139 [main] DEBUG [] [] o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-07 10:37:26.298 [main] INFO  [] [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-09-07 10:37:26.366 [main] DEBUG [] [] o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2025-09-07 10:37:26.799 [main] INFO  [] [] o.s.b.w.e.netty.NettyWebServer - Netty started on port 9090 (http)
+2025-09-07 10:37:26.849 [main] DEBUG [] [] o.s.c.g.filter.GatewayMetricsFilter - New routes count: 0
+2025-09-07 10:37:26.852 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Started AfristaysApiGatewayApplication in 3.764 seconds (process running for 4.285)
+2025-09-07 10:37:37.544 [boundedElastic-2] DEBUG [] [] o.s.w.r.r.m.a.ResponseEntityResultHandler - [833987d6-1] Using 'application/vnd.spring-boot.actuator.v3+json' given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-09-07 10:37:37.545 [boundedElastic-2] DEBUG [] [] o.s.w.r.r.m.a.ResponseEntityResultHandler - [833987d6-1] 0..1 [org.springframework.boot.actuate.health.SystemHealth]
+2025-09-07 10:38:03.947 [SpringApplicationShutdownHook] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 10:38:03.952 [netty-shutdown] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2025-09-07 10:38:21.971 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.2 with PID 34348 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\afristays-0.0.1-SNAPSHOT.jar started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:38:21.976 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:38:21.978 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:38:23.193 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=f20fe3d4-fc90-3550-a0e3-64d12625fc28
+2025-09-07 10:38:23.758 [main] DEBUG [] [] o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='test-route', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/test/**}}], filters=[FilterDefinition{name='StripPrefix', args={_genkey_0=1}}], uri=https://httpbin.org, order=0, metadata={}, enabled=true}]
+2025-09-07 10:38:24.036 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-09-07 10:38:24.036 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-09-07 10:38:24.036 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-09-07 10:38:24.036 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-09-07 10:38:24.036 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-09-07 10:38:24.038 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-09-07 10:38:24.038 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-09-07 10:38:24.038 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-09-07 10:38:24.038 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-09-07 10:38:24.038 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2025-09-07 10:38:24.039 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-09-07 10:38:24.039 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-09-07 10:38:24.039 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-09-07 10:38:24.039 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-09-07 10:38:24.237 [main] DEBUG [] [] o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-07 10:38:24.399 [main] INFO  [] [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-09-07 10:38:24.476 [main] DEBUG [] [] o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2025-09-07 10:38:24.912 [main] INFO  [] [] o.s.b.w.e.netty.NettyWebServer - Netty started on port 9090 (http)
+2025-09-07 10:38:24.983 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition test-route applying {_genkey_0=/test/**} to Path
+2025-09-07 10:38:25.000 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition test-route applying filter {_genkey_0=1} to StripPrefix
+2025-09-07 10:38:25.016 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: test-route
+2025-09-07 10:38:25.023 [main] DEBUG [] [] o.s.c.g.filter.GatewayMetricsFilter - New routes count: 1
+2025-09-07 10:38:25.026 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Started AfristaysApiGatewayApplication in 3.674 seconds (process running for 4.183)
+2025-09-07 10:38:37.384 [reactor-http-nio-2] DEBUG [] [] o.s.c.g.h.RoutePredicateHandlerMapping - Route matched: test-route
+2025-09-07 10:38:37.386 [reactor-http-nio-2] DEBUG [] [] o.s.c.g.h.RoutePredicateHandlerMapping - Mapping [Exchange: GET http://localhost:9090/test/get] to Route{id='test-route', uri=https://httpbin.org:443, order=0, predicate=Paths: [/test/**], match trailing slash: true, gatewayFilters=[[[StripPrefix parts = 1], order = 1]], metadata={}}
+2025-09-07 10:38:37.387 [reactor-http-nio-2] DEBUG [] [] o.s.c.g.h.RoutePredicateHandlerMapping - [b0d2fc19-1] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@6f1fa1d0
+2025-09-07 10:38:37.387 [reactor-http-nio-2] DEBUG [] [] o.s.c.g.handler.FilteringWebHandler - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@18ffca6c}, order = -2147483648], [GatewayFilterAdapter{delegate=com.afristays.apigateway.filter.RequestLoggingFilter@2055833f}, order = -2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@443a06ad}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@143fefaf}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@34a6d9db}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@756808cc}, order = 0], [[StripPrefix parts = 1], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@46468f0}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.config.GatewayNoLoadBalancerClientAutoConfiguration$NoLoadBalancerClientFilter@52f8a6f4}, order = 10150], [GatewayFilterAdapter{delegate=com.afristays.apigateway.filter.ResponseLoggingFilter@28768e25}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@52ecc989}, order = 2147483646], [GatewayFilterAdapter{delegate=com.afristays.apigateway.filter.AccessLoggingFilter@595f9916}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@310d57b1}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@5f8f1712}, order = 2147483647]]
+2025-09-07 10:38:37.390 [reactor-http-nio-2] INFO  [6b4e4539] [0:0:0:0:0:0:0:1] REQUEST_LOGGER - INCOMING_REQUEST | 2025-09-07 10:38:37.390 | 6b4e4539 | 0:0:0:0:0:0:0:1 | GET | /test/get | Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768 | N/A | N/A | N/A | 3
+2025-09-07 10:38:37.392 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.RequestLoggingFilter - REQUEST_HEADER | 6b4e4539 | 0:0:0:0:0:0:0:1 | User-Agent: [Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768]
+2025-09-07 10:38:37.393 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.RequestLoggingFilter - REQUEST_HEADER | 6b4e4539 | 0:0:0:0:0:0:0:1 | Host: [localhost:9090]
+2025-09-07 10:38:37.393 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.RequestLoggingFilter - REQUEST_HEADER | 6b4e4539 | 0:0:0:0:0:0:0:1 | Connection: [Keep-Alive]
+2025-09-07 10:38:37.406 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] o.s.c.g.f.h.o.ObservedRequestHttpHeadersFilter - Will instrument the HTTP request headers [User-Agent:"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768", Host:"localhost:9090", Forwarded:"proto=http;host="localhost:9090";for="[0:0:0:0:0:0:0:1]:62231"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Prefix:"/test", X-Forwarded-Port:"9090", X-Forwarded-Host:"localhost:9090"]
+2025-09-07 10:38:37.410 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] o.s.c.g.f.h.o.ObservedRequestHttpHeadersFilter - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='test-route', spring.cloud.gateway.route.uri='https://httpbin.org:443'], highCardinalityKeyValues=[http.uri='http://localhost:9090/get'], map=[class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@330d25c1', class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=8.15399E-4, duration(nanos)=815399.0, startTimeNanos=67933384153800}'], parentObservation={name=http.server.requests(null), error=null, context=name='http.server.requests', contextualName='null', error='null', lowCardinalityKeyValues=[exception='none', method='GET', outcome='SUCCESS', status='200', uri='UNKNOWN'], highCardinalityKeyValues=[http.url='/test/get'], map=[class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@1339546f', class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.035430099, duration(nanos)=3.5430099E7, startTimeNanos=67933349642300}'], parentObservation=null}} created for the request. New headers are [User-Agent:"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768", Host:"localhost:9090", Forwarded:"proto=http;host="localhost:9090";for="[0:0:0:0:0:0:0:1]:62231"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Prefix:"/test", X-Forwarded-Port:"9090", X-Forwarded-Host:"localhost:9090"]
+2025-09-07 10:38:39.210 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] o.s.c.g.f.h.o.ObservedResponseHttpHeadersFilter - Will instrument the response
+2025-09-07 10:38:39.210 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] o.s.c.g.f.h.o.ObservedResponseHttpHeadersFilter - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='test-route', spring.cloud.gateway.route.uri='https://httpbin.org:443'], highCardinalityKeyValues=[http.uri='http://localhost:9090/get'], map=[class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@330d25c1', class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=1.800205399, duration(nanos)=1.800205399E9, startTimeNanos=67933384153800}'], parentObservation={name=http.server.requests(null), error=null, context=name='http.server.requests', contextualName='null', error='null', lowCardinalityKeyValues=[exception='none', method='GET', outcome='SUCCESS', status='200', uri='UNKNOWN'], highCardinalityKeyValues=[http.url='/test/get'], map=[class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@1339546f', class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=1.8347721, duration(nanos)=1.8347721E9, startTimeNanos=67933349642300}'], parentObservation=null}}
+2025-09-07 10:38:39.229 [reactor-http-nio-2] ERROR [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.AccessLoggingFilter - Error creating access log entry: Unsupported field: OffsetSeconds
+2025-09-07 10:38:39.230 [reactor-http-nio-2] INFO  [6b4e4539] [0:0:0:0:0:0:0:1] RESPONSE_LOGGER - OUTGOING_RESPONSE | 2025-09-07 10:38:39.230 | 6b4e4539 | 0:0:0:0:0:0:0:1 | GET | /get | 200 | OK | 1840ms | application/json | 542 | N/A | N/A | 7
+2025-09-07 10:38:39.231 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 6b4e4539 | 0:0:0:0:0:0:0:1 | Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+2025-09-07 10:38:39.232 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 6b4e4539 | 0:0:0:0:0:0:0:1 | Date: [Sun, 07 Sep 2025 07:38:40 GMT]
+2025-09-07 10:38:39.232 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 6b4e4539 | 0:0:0:0:0:0:0:1 | Content-Type: [application/json]
+2025-09-07 10:38:39.232 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 6b4e4539 | 0:0:0:0:0:0:0:1 | Content-Length: [542]
+2025-09-07 10:38:39.232 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 6b4e4539 | 0:0:0:0:0:0:0:1 | Server: [gunicorn/19.9.0]
+2025-09-07 10:38:39.233 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 6b4e4539 | 0:0:0:0:0:0:0:1 | Access-Control-Allow-Origin: [*]
+2025-09-07 10:38:39.233 [reactor-http-nio-2] DEBUG [6b4e4539] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 6b4e4539 | 0:0:0:0:0:0:0:1 | Access-Control-Allow-Credentials: [true]
+2025-09-07 10:38:39.251 [reactor-http-nio-2] INFO  [] [] REQUEST_LOGGER - REQUEST_COMPLETED | 2025-09-07 10:38:39.251 | 6b4e4539 | 0:0:0:0:0:0:0:1 | GET | /test/get | 1860ms | onComplete
+2025-09-07 10:39:08.387 [reactor-http-nio-3] DEBUG [] [] o.s.c.g.h.RoutePredicateHandlerMapping - Route matched: test-route
+2025-09-07 10:39:08.387 [reactor-http-nio-3] DEBUG [] [] o.s.c.g.h.RoutePredicateHandlerMapping - Mapping [Exchange: GET http://localhost:9090/test/ip] to Route{id='test-route', uri=https://httpbin.org:443, order=0, predicate=Paths: [/test/**], match trailing slash: true, gatewayFilters=[[[StripPrefix parts = 1], order = 1]], metadata={}}
+2025-09-07 10:39:08.388 [reactor-http-nio-3] DEBUG [] [] o.s.c.g.h.RoutePredicateHandlerMapping - [a34521e8-2] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@6f1fa1d0
+2025-09-07 10:39:08.388 [reactor-http-nio-3] DEBUG [] [] o.s.c.g.handler.FilteringWebHandler - Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@18ffca6c}, order = -2147483648], [GatewayFilterAdapter{delegate=com.afristays.apigateway.filter.RequestLoggingFilter@2055833f}, order = -2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@443a06ad}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@143fefaf}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@34a6d9db}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.GatewayMetricsFilter@756808cc}, order = 0], [[StripPrefix parts = 1], order = 1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@46468f0}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.config.GatewayNoLoadBalancerClientAutoConfiguration$NoLoadBalancerClientFilter@52f8a6f4}, order = 10150], [GatewayFilterAdapter{delegate=com.afristays.apigateway.filter.ResponseLoggingFilter@28768e25}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@52ecc989}, order = 2147483646], [GatewayFilterAdapter{delegate=com.afristays.apigateway.filter.AccessLoggingFilter@595f9916}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@310d57b1}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@5f8f1712}, order = 2147483647]]
+2025-09-07 10:39:08.388 [reactor-http-nio-3] INFO  [7102de67] [0:0:0:0:0:0:0:1] REQUEST_LOGGER - INCOMING_REQUEST | 2025-09-07 10:39:08.388 | 7102de67 | 0:0:0:0:0:0:0:1 | GET | /test/ip | Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768 | N/A | N/A | N/A | 3
+2025-09-07 10:39:08.390 [reactor-http-nio-3] DEBUG [7102de67] [0:0:0:0:0:0:0:1] c.a.a.filter.RequestLoggingFilter - REQUEST_HEADER | 7102de67 | 0:0:0:0:0:0:0:1 | User-Agent: [Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768]
+2025-09-07 10:39:08.390 [reactor-http-nio-3] DEBUG [7102de67] [0:0:0:0:0:0:0:1] c.a.a.filter.RequestLoggingFilter - REQUEST_HEADER | 7102de67 | 0:0:0:0:0:0:0:1 | Host: [localhost:9090]
+2025-09-07 10:39:08.391 [reactor-http-nio-3] DEBUG [7102de67] [0:0:0:0:0:0:0:1] c.a.a.filter.RequestLoggingFilter - REQUEST_HEADER | 7102de67 | 0:0:0:0:0:0:0:1 | Connection: [Keep-Alive]
+2025-09-07 10:39:08.391 [reactor-http-nio-3] DEBUG [7102de67] [0:0:0:0:0:0:0:1] o.s.c.g.f.h.o.ObservedRequestHttpHeadersFilter - Will instrument the HTTP request headers [User-Agent:"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768", Host:"localhost:9090", Forwarded:"proto=http;host="localhost:9090";for="[0:0:0:0:0:0:0:1]:51703"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Prefix:"/test", X-Forwarded-Port:"9090", X-Forwarded-Host:"localhost:9090"]
+2025-09-07 10:39:08.392 [reactor-http-nio-3] DEBUG [7102de67] [0:0:0:0:0:0:0:1] o.s.c.g.f.h.o.ObservedRequestHttpHeadersFilter - Client observation  {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='test-route', spring.cloud.gateway.route.uri='https://httpbin.org:443'], highCardinalityKeyValues=[http.uri='http://localhost:9090/ip'], map=[class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@682a584a', class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=2.379E-4, duration(nanos)=237900.0, startTimeNanos=67964365768100}'], parentObservation={name=http.server.requests(null), error=null, context=name='http.server.requests', contextualName='null', error='null', lowCardinalityKeyValues=[exception='none', method='GET', outcome='SUCCESS', status='200', uri='UNKNOWN'], highCardinalityKeyValues=[http.url='/test/ip'], map=[class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@2d28db2b', class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.0046299, duration(nanos)=4629900.0, startTimeNanos=67964361453200}'], parentObservation=null}} created for the request. New headers are [User-Agent:"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4768", Host:"localhost:9090", Forwarded:"proto=http;host="localhost:9090";for="[0:0:0:0:0:0:0:1]:51703"", X-Forwarded-For:"0:0:0:0:0:0:0:1", X-Forwarded-Proto:"http", X-Forwarded-Prefix:"/test", X-Forwarded-Port:"9090", X-Forwarded-Host:"localhost:9090"]
+2025-09-07 10:39:08.610 [reactor-http-nio-2] DEBUG [] [] o.s.c.g.f.h.o.ObservedResponseHttpHeadersFilter - Will instrument the response
+2025-09-07 10:39:08.611 [reactor-http-nio-2] DEBUG [] [] o.s.c.g.f.h.o.ObservedResponseHttpHeadersFilter - The response was handled for observation {name=http.client.requests(null), error=null, context=name='http.client.requests', contextualName='null', error='null', lowCardinalityKeyValues=[http.method='GET', http.status_code='UNKNOWN', spring.cloud.gateway.route.id='test-route', spring.cloud.gateway.route.uri='https://httpbin.org:443'], highCardinalityKeyValues=[http.uri='http://localhost:9090/ip'], map=[class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@682a584a', class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.219415899, duration(nanos)=2.19415899E8, startTimeNanos=67964365768100}'], parentObservation={name=http.server.requests(null), error=null, context=name='http.server.requests', contextualName='null', error='null', lowCardinalityKeyValues=[exception='none', method='GET', outcome='SUCCESS', status='200', uri='UNKNOWN'], highCardinalityKeyValues=[http.url='/test/ip'], map=[class io.micrometer.core.instrument.Timer$Sample='io.micrometer.core.instrument.Timer$Sample@2d28db2b', class io.micrometer.core.instrument.LongTaskTimer$Sample='SampleImpl{duration(seconds)=0.2237915, duration(nanos)=2.237915E8, startTimeNanos=67964361453200}'], parentObservation=null}}
+2025-09-07 10:39:08.612 [reactor-http-nio-2] ERROR [] [] c.a.a.filter.AccessLoggingFilter - Error creating access log entry: Unsupported field: OffsetSeconds
+2025-09-07 10:39:08.612 [reactor-http-nio-2] INFO  [7102de67] [0:0:0:0:0:0:0:1] RESPONSE_LOGGER - OUTGOING_RESPONSE | 2025-09-07 10:39:08.612 | 7102de67 | 0:0:0:0:0:0:0:1 | GET | /ip | 200 | OK | 224ms | application/json | 51 | N/A | N/A | 7
+2025-09-07 10:39:08.612 [reactor-http-nio-2] DEBUG [7102de67] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 7102de67 | 0:0:0:0:0:0:0:1 | Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]
+2025-09-07 10:39:08.613 [reactor-http-nio-2] DEBUG [7102de67] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 7102de67 | 0:0:0:0:0:0:0:1 | Date: [Sun, 07 Sep 2025 07:39:09 GMT]
+2025-09-07 10:39:08.613 [reactor-http-nio-2] DEBUG [7102de67] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 7102de67 | 0:0:0:0:0:0:0:1 | Content-Type: [application/json]
+2025-09-07 10:39:08.613 [reactor-http-nio-2] DEBUG [7102de67] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 7102de67 | 0:0:0:0:0:0:0:1 | Content-Length: [51]
+2025-09-07 10:39:08.613 [reactor-http-nio-2] DEBUG [7102de67] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 7102de67 | 0:0:0:0:0:0:0:1 | Server: [gunicorn/19.9.0]
+2025-09-07 10:39:08.613 [reactor-http-nio-2] DEBUG [7102de67] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 7102de67 | 0:0:0:0:0:0:0:1 | Access-Control-Allow-Origin: [*]
+2025-09-07 10:39:08.613 [reactor-http-nio-2] DEBUG [7102de67] [0:0:0:0:0:0:0:1] c.a.a.filter.ResponseLoggingFilter - RESPONSE_HEADER | 7102de67 | 0:0:0:0:0:0:0:1 | Access-Control-Allow-Credentials: [true]
+2025-09-07 10:39:08.622 [reactor-http-nio-3] INFO  [7102de67] [0:0:0:0:0:0:0:1] REQUEST_LOGGER - REQUEST_COMPLETED | 2025-09-07 10:39:08.622 | 7102de67 | 0:0:0:0:0:0:0:1 | GET | /test/ip | 234ms | onComplete
+2025-09-07 10:41:00.515 [SpringApplicationShutdownHook] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 10:41:00.520 [netty-shutdown] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2025-09-07 10:41:42.155 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication using Java 21.0.5 with PID 36852 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\classes started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:41:42.157 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:41:42.158 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:41:43.160 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=3eef25ab-7107-3190-aaec-d901fd99e043
+2025-09-07 10:41:43.562 [main] DEBUG [] [] o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='test-route', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/test/**}}], filters=[FilterDefinition{name='StripPrefix', args={_genkey_0=1}}], uri=https://httpbin.org, order=0, metadata={}, enabled=true}]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-09-07 10:41:43.722 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-09-07 10:41:43.724 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-09-07 10:41:43.844 [main] DEBUG [] [] o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-07 10:41:43.966 [main] INFO  [] [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-09-07 10:41:44.004 [main] DEBUG [] [] o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2025-09-07 10:41:46.324 [main] WARN  [] [] o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-09-07 10:41:46.338 [main] INFO  [] [] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-07 10:41:46.347 [main] ERROR [] [] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 31304 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 31304 or configure this application to listen on another port.
+
+2025-09-07 10:43:30.094 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication using Java 21.0.5 with PID 20132 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\classes started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:43:30.097 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:43:30.098 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:43:30.854 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=3eef25ab-7107-3190-aaec-d901fd99e043
+2025-09-07 10:43:31.263 [main] DEBUG [] [] o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='test-route', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/test/**}}], filters=[FilterDefinition{name='StripPrefix', args={_genkey_0=1}}], uri=https://httpbin.org, order=0, metadata={}, enabled=true}]
+2025-09-07 10:43:31.426 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-09-07 10:43:31.427 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-09-07 10:43:31.525 [main] DEBUG [] [] o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-07 10:43:31.679 [main] INFO  [] [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-09-07 10:43:31.715 [main] DEBUG [] [] o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2025-09-07 10:43:31.968 [main] INFO  [] [] o.s.b.w.e.netty.NettyWebServer - Netty started on port 31304 (http)
+2025-09-07 10:43:31.999 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition test-route applying {_genkey_0=/test/**} to Path
+2025-09-07 10:43:32.009 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition test-route applying filter {_genkey_0=1} to StripPrefix
+2025-09-07 10:43:32.020 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: test-route
+2025-09-07 10:43:32.028 [main] DEBUG [] [] o.s.c.g.filter.GatewayMetricsFilter - New routes count: 1
+2025-09-07 10:43:32.028 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Started AfristaysApiGatewayApplication in 2.351 seconds (process running for 2.966)
+2025-09-07 10:43:41.433 [SpringApplicationShutdownHook] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 10:43:41.435 [netty-shutdown] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2025-09-07 10:43:45.768 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication using Java 21.0.5 with PID 33940 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\classes started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:43:45.770 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:43:45.771 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:43:46.531 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=3eef25ab-7107-3190-aaec-d901fd99e043
+2025-09-07 10:43:46.729 [main] WARN  [] [] o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server
+2025-09-07 10:43:46.740 [main] INFO  [] [] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-07 10:43:46.757 [main] ERROR [] [] o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start reactive web server
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.afristays.apigateway.AfristaysApiGatewayApplication.main(AfristaysApiGatewayApplication.java:16)
+Caused by: java.lang.IllegalStateException: SSL is enabled but no trust material is configured for the default host
+	at org.springframework.util.Assert.state(Assert.java:79)
+	at org.springframework.boot.web.server.WebServerSslBundle$WebServerSslStoreBundle.<init>(WebServerSslBundle.java:209)
+	at org.springframework.boot.web.server.WebServerSslBundle.createStoreBundle(WebServerSslBundle.java:149)
+	at org.springframework.boot.web.server.WebServerSslBundle.get(WebServerSslBundle.java:142)
+	at org.springframework.boot.web.server.AbstractConfigurableWebServerFactory.getSslBundle(AbstractConfigurableWebServerFactory.java:198)
+	at org.springframework.boot.web.embedded.netty.NettyReactiveWebServerFactory.customizeSslConfiguration(NettyReactiveWebServerFactory.java:176)
+	at org.springframework.boot.web.embedded.netty.NettyReactiveWebServerFactory.createHttpServer(NettyReactiveWebServerFactory.java:165)
+	at org.springframework.boot.web.embedded.netty.NettyReactiveWebServerFactory.getWebServer(NettyReactiveWebServerFactory.java:73)
+	at org.springframework.boot.web.reactive.context.WebServerManager.<init>(WebServerManager.java:50)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:96)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:81)
+	... 8 common frames omitted
+2025-09-07 10:44:11.457 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication using Java 21.0.5 with PID 33412 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\classes started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:44:11.458 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:44:11.459 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:44:12.155 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=3eef25ab-7107-3190-aaec-d901fd99e043
+2025-09-07 10:44:12.339 [main] WARN  [] [] o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start reactive web server
+2025-09-07 10:44:12.347 [main] INFO  [] [] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-07 10:44:12.360 [main] ERROR [] [] o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start reactive web server
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.afristays.apigateway.AfristaysApiGatewayApplication.main(AfristaysApiGatewayApplication.java:16)
+Caused by: java.lang.IllegalStateException: Unable to create key store: Could not load store from 'classpath:gateway.p12'
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.createKeyStore(JksSslStoreBundle.java:112)
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.lambda$new$0(JksSslStoreBundle.java:75)
+	at org.springframework.util.function.SingletonSupplier.get(SingletonSupplier.java:106)
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.getKeyStore(JksSslStoreBundle.java:81)
+	at org.springframework.boot.web.server.WebServerSslBundle.createKeyStore(WebServerSslBundle.java:157)
+	at org.springframework.boot.web.server.WebServerSslBundle.createStoreBundle(WebServerSslBundle.java:147)
+	at org.springframework.boot.web.server.WebServerSslBundle.get(WebServerSslBundle.java:142)
+	at org.springframework.boot.web.server.AbstractConfigurableWebServerFactory.getSslBundle(AbstractConfigurableWebServerFactory.java:198)
+	at org.springframework.boot.web.embedded.netty.NettyReactiveWebServerFactory.customizeSslConfiguration(NettyReactiveWebServerFactory.java:176)
+	at org.springframework.boot.web.embedded.netty.NettyReactiveWebServerFactory.createHttpServer(NettyReactiveWebServerFactory.java:165)
+	at org.springframework.boot.web.embedded.netty.NettyReactiveWebServerFactory.getWebServer(NettyReactiveWebServerFactory.java:73)
+	at org.springframework.boot.web.reactive.context.WebServerManager.<init>(WebServerManager.java:50)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.createWebServer(ReactiveWebServerApplicationContext.java:96)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.onRefresh(ReactiveWebServerApplicationContext.java:81)
+	... 8 common frames omitted
+Caused by: java.lang.IllegalStateException: Could not load store from 'classpath:gateway.p12'
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.loadKeyStore(JksSslStoreBundle.java:140)
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.createKeyStore(JksSslStoreBundle.java:107)
+	... 21 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [gateway.p12] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215)
+	at org.springframework.boot.ssl.jks.JksSslStoreBundle.loadKeyStore(JksSslStoreBundle.java:135)
+	... 22 common frames omitted
+2025-09-07 10:44:37.228 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication using Java 21.0.5 with PID 34188 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\classes started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:44:37.229 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:44:37.229 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:44:37.954 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=3eef25ab-7107-3190-aaec-d901fd99e043
+2025-09-07 10:44:38.614 [main] DEBUG [] [] o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='test-route', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/test/**}}], filters=[FilterDefinition{name='StripPrefix', args={_genkey_0=1}}], uri=https://httpbin.org, order=0, metadata={}, enabled=true}]
+2025-09-07 10:44:38.878 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-09-07 10:44:38.878 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-09-07 10:44:38.878 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-09-07 10:44:38.878 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-09-07 10:44:38.878 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-09-07 10:44:38.878 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-09-07 10:44:38.878 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-09-07 10:44:38.878 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-09-07 10:44:38.879 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-09-07 10:44:38.879 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2025-09-07 10:44:38.879 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-09-07 10:44:38.879 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-09-07 10:44:38.879 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-09-07 10:44:38.879 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-09-07 10:44:38.970 [main] DEBUG [] [] o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-07 10:44:39.112 [main] INFO  [] [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-09-07 10:44:39.165 [main] DEBUG [] [] o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2025-09-07 10:44:39.401 [main] INFO  [] [] o.s.b.w.e.netty.NettyWebServer - Netty started on port 31304 (https)
+2025-09-07 10:44:39.439 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition test-route applying {_genkey_0=/test/**} to Path
+2025-09-07 10:44:39.451 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition test-route applying filter {_genkey_0=1} to StripPrefix
+2025-09-07 10:44:39.457 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: test-route
+2025-09-07 10:44:39.461 [main] DEBUG [] [] o.s.c.g.filter.GatewayMetricsFilter - New routes count: 1
+2025-09-07 10:44:39.462 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Started AfristaysApiGatewayApplication in 2.635 seconds (process running for 3.198)
+2025-09-07 10:45:57.684 [SpringApplicationShutdownHook] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 10:45:57.687 [netty-shutdown] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
+2025-09-07 10:46:01.953 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Starting AfristaysApiGatewayApplication using Java 21.0.5 with PID 5052 (C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway\target\classes started by Trevin in C:\Users\Trevin\Documents\projects\personal\afristays\afristays\afristays-api-gateway)
+2025-09-07 10:46:01.954 [main] DEBUG [] [] c.a.a.AfristaysApiGatewayApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-09-07 10:46:01.955 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-07 10:46:02.650 [main] INFO  [] [] o.s.cloud.context.scope.GenericScope - BeanFactory id=3eef25ab-7107-3190-aaec-d901fd99e043
+2025-09-07 10:46:03.200 [main] DEBUG [] [] o.s.c.g.config.GatewayProperties - Routes supplied from Gateway Properties: [RouteDefinition{id='test-route', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/test/**}}], filters=[FilterDefinition{name='StripPrefix', args={_genkey_0=1}}], uri=https://httpbin.org, order=0, metadata={}, enabled=true}]
+2025-09-07 10:46:03.346 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2025-09-07 10:46:03.347 [main] INFO  [] [] o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-09-07 10:46:03.442 [main] DEBUG [] [] o.s.w.r.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-07 10:46:03.572 [main] INFO  [] [] o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-09-07 10:46:03.606 [main] DEBUG [] [] o.s.w.r.r.m.a.ControllerMethodResolver - ControllerAdvice beans: none
+2025-09-07 10:46:03.831 [main] INFO  [] [] o.s.b.w.e.netty.NettyWebServer - Netty started on port 31304 (https)
+2025-09-07 10:46:03.860 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition test-route applying {_genkey_0=/test/**} to Path
+2025-09-07 10:46:03.870 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition test-route applying filter {_genkey_0=1} to StripPrefix
+2025-09-07 10:46:03.877 [main] DEBUG [] [] o.s.c.g.r.RouteDefinitionRouteLocator - RouteDefinition matched: test-route
+2025-09-07 10:46:03.881 [main] DEBUG [] [] o.s.c.g.filter.GatewayMetricsFilter - New routes count: 1
+2025-09-07 10:46:03.883 [main] INFO  [] [] c.a.a.AfristaysApiGatewayApplication - Started AfristaysApiGatewayApplication in 2.308 seconds (process running for 2.923)
+2025-09-07 10:46:18.429 [SpringApplicationShutdownHook] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-07 10:46:18.431 [netty-shutdown] INFO  [] [] o.s.b.w.e.netty.GracefulShutdown - Graceful shutdown complete
