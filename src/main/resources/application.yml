@@ -36,16 +36,27 @@ spring:
               - Authorization
               - Content-Type
             maxAge: 3600
+  # Redis configuration for rate limiting
+  data:
+    redis:
+      host: redis
+      port: 6379
+      password:
+      timeout: 2000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
 
 server:
   port: 31304
-  address: 0.0.0.0  # Allow external access
   ssl:
-    enabled: true
-    key-store: classpath:keystore.p12
-    key-store-password: Ashihundu@2003
-    key-store-type: PKCS12
-    key-alias: tomcat
+     enabled: true
+     key-store: classpath:keystore.p12
+     key-store-password: Ashihundu@2003
+     key-store-type: PKCS12
+     key-alias: tomcat
 
 # Enable actuator endpoints for debugging
 management:
@@ -59,6 +70,29 @@ management:
     loggers:
       enabled: true
 
+# Rate limiting and DDoS protection configuration
+afristays:
+  rate-limit:
+    requests-per-minute: 60
+    requests-per-hour: 1000
+    requests-per-day: 10000
+    burst-capacity: 10
+    burst-refill-rate: 5
+    ddos-threshold-per-minute: 100
+    ddos-threshold-per-second: 10
+    ddos-block-duration-minutes: 15
+    max-consecutive-errors: 10
+    max-same-endpoint-requests: 50
+    suspicious-pattern-block-minutes: 5
+    whitelisted-ips:
+      - "127.0.0.1"
+      - "::1"
+    blacklisted-ips: []
+    exempt-paths:
+      - "/actuator/health"
+      - "/api/v1/auth/health"
+      - "/admin/security/health"
+
 # Logging configuration
 logging:
   level:
@@ -69,6 +103,7 @@ logging:
     org.springframework.http.server.reactive: DEBUG
     REQUEST_LOGGER: INFO
     RESPONSE_LOGGER: INFO
+    SECURITY_LOGGER: INFO
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{requestId:-}] [%X{clientIp:-}] %logger{36} - %msg%n"
     file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{requestId:-}] [%X{clientIp:-}] %logger{36} - %msg%n"

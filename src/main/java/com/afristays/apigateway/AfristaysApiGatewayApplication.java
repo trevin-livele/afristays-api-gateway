@@ -2,14 +2,17 @@ package com.afristays.apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
+import com.afristays.apigateway.config.RateLimitConfig;
 
 
 
 
 @SpringBootApplication
+@EnableConfigurationProperties(RateLimitConfig.class)
 public class AfristaysApiGatewayApplication {
 
 	public static void main(String[] args) {
@@ -51,6 +54,15 @@ public class AfristaysApiGatewayApplication {
                                 .stripPrefix(2)
                                 .addRequestHeader("X-Gateway", "API-Gateway"))
                         .uri("http://afristays-listing:31300"))
+
+
+                // Portal Switch Service Routes
+                .route("portal-switch-service", r -> r
+                        .path("/api/portal-switch/**")
+                        .filters(f -> f
+                                .addRequestHeader("X-Gateway", "API-Gateway"))
+                        .uri("http://portal-switch-service:31307"))
+
 
                 // Health check route (gateway's own health)
                 .route("health", r -> r
