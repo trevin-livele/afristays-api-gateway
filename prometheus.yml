@@ -1,0 +1,45 @@
+# Prometheus configuration for Afristays API Gateway
+global:
+  scrape_interval: 30s
+  evaluation_interval: 30s
+
+# Scrape configuration
+scrape_configs:
+  # Job for Afristays API Gateway
+  - job_name: 'afristays-api-gateway'
+    static_configs:
+      - targets: ['localhost:31304']
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 30s
+    scrape_timeout: 10s
+    honor_labels: true
+    
+    # Add custom labels
+    relabel_configs:
+      - target_label: '__address__'
+        replacement: 'localhost:31304'
+      - target_label: 'instance'
+        replacement: 'afristays-api-gateway'
+      - target_label: 'service'
+        replacement: 'api-gateway'
+      - target_label: 'environment'
+        replacement: 'development'  # Change to production/staging as needed
+
+  # Optional: Health check endpoint
+  - job_name: 'afristays-health'
+    static_configs:
+      - targets: ['localhost:31304']
+    metrics_path: '/actuator/health'
+    scrape_interval: 60s
+    scrape_timeout: 5s
+    
+# Optional: Alerting rules
+rule_files:
+  # - "afristays_alerts.yml"
+
+# Optional: Alertmanager configuration
+# alerting:
+#   alertmanagers:
+#     - static_configs:
+#         - targets:
+#           - alertmanager:9093

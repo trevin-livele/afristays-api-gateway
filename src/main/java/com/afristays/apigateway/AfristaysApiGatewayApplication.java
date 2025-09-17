@@ -63,7 +63,6 @@ public class AfristaysApiGatewayApplication {
                                 .addRequestHeader("X-Gateway", "API-Gateway"))
                         .uri("http://portal-switch-service:31307"))
 
-
                 // Health check route (gateway's own health)
                 .route("health", r -> r
                         .path("/actuator/health")

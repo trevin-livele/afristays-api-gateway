@@ -1,0 +1,170 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Afristays API Gateway - Rate Limiting & Performance",
+    "tags": ["afristays", "api-gateway", "rate-limiting"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Request Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(http_server_requests_seconds_count{application=\"afristays-api-gateway\"}[5m])",
+            "legendFormat": "Requests/sec"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0},
+        "yAxes": [
+          {"label": "requests/sec", "min": 0}
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Rate Limit Violations",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(afristays_rate_limit_violations_total[5m])",
+            "legendFormat": "Rate Limit Violations/sec"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0},
+        "yAxes": [
+          {"label": "violations/sec", "min": 0}
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Blocked Requests",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "afristays_blocked_requests_total",
+            "legendFormat": "Total Blocked"
+          }
+        ],
+        "gridPos": {"h": 6, "w": 6, "x": 0, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "DDoS Detections",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "afristays_ddos_detections_total",
+            "legendFormat": "DDoS Attacks"
+          }
+        ],
+        "gridPos": {"h": 6, "w": 6, "x": 6, "y": 8}
+      },
+      {
+        "id": 5,
+        "title": "Response Times (Percentiles)",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.50, rate(http_server_requests_seconds_bucket{application=\"afristays-api-gateway\"}[5m]))",
+            "legendFormat": "50th percentile"
+          },
+          {
+            "expr": "histogram_quantile(0.95, rate(http_server_requests_seconds_bucket{application=\"afristays-api-gateway\"}[5m]))",
+            "legendFormat": "95th percentile"
+          },
+          {
+            "expr": "histogram_quantile(0.99, rate(http_server_requests_seconds_bucket{application=\"afristays-api-gateway\"}[5m]))",
+            "legendFormat": "99th percentile"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8},
+        "yAxes": [
+          {"label": "seconds", "min": 0}
+        ]
+      },
+      {
+        "id": 6,
+        "title": "HTTP Status Codes",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(http_server_requests_seconds_count{application=\"afristays-api-gateway\",status=~\"2..\"}[5m])",
+            "legendFormat": "2xx Success"
+          },
+          {
+            "expr": "rate(http_server_requests_seconds_count{application=\"afristays-api-gateway\",status=~\"4..\"}[5m])",
+            "legendFormat": "4xx Client Error"
+          },
+          {
+            "expr": "rate(http_server_requests_seconds_count{application=\"afristays-api-gateway\",status=~\"5..\"}[5m])",
+            "legendFormat": "5xx Server Error"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 16}
+      },
+      {
+        "id": 7,
+        "title": "JVM Memory Usage",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "jvm_memory_used_bytes{application=\"afristays-api-gateway\",area=\"heap\"}",
+            "legendFormat": "Heap Used"
+          },
+          {
+            "expr": "jvm_memory_max_bytes{application=\"afristays-api-gateway\",area=\"heap\"}",
+            "legendFormat": "Heap Max"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 16},
+        "yAxes": [
+          {"label": "bytes", "min": 0}
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Redis Connections",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "afristays_redis_connections_active",
+            "legendFormat": "Active Connections"
+          }
+        ],
+        "gridPos": {"h": 6, "w": 6, "x": 0, "y": 24}
+      },
+      {
+        "id": 9,
+        "title": "Current Rate Limit Violations",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "afristays_rate_limit_violations_current",
+            "legendFormat": "Current Violations"
+          }
+        ],
+        "gridPos": {"h": 6, "w": 6, "x": 6, "y": 24}
+      },
+      {
+        "id": 10,
+        "title": "Gateway Route Performance",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(spring_cloud_gateway_requests_seconds_count[5m])",
+            "legendFormat": "{{route}} - {{status}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 24},
+        "yAxes": [
+          {"label": "requests/sec", "min": 0}
+        ]
+      }
+    ],
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "refresh": "30s"
+  }
+}

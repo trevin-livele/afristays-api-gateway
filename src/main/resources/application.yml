@@ -23,6 +23,7 @@ spring:
               - "https://server.trevtechltd.com:*"
               - "https://www.afristays.com"
               - "https://afristays.com"
+              - "https://staykenyaadmin.vercel.app:*"
             allowedMethods:
               - GET
               - POST
@@ -58,38 +59,83 @@ server:
      key-store-type: PKCS12
      key-alias: tomcat
 
-# Enable actuator endpoints for debugging
+# Enable actuator endpoints for debugging and monitoring
 management:
   endpoints:
     web:
       exposure:
-        include: health,gateway,metrics,loggers
+        include: "*"  # Expose all endpoints for comprehensive monitoring
+      base-path: /actuator
+      cors:
+        allowed-origins: "*"  # Allow Grafana to access endpoints
+        allowed-methods: GET,POST
   endpoint:
     health:
       show-details: always
-    loggers:
+      show-components: always
+    info:
       enabled: true
+    prometheus:
+      enabled: true
+    metrics:
+      enabled: true
+    gateway:
+      enabled: true  # Spring Cloud Gateway specific metrics
+    env:
+      enabled: true
+    configprops:
+      enabled: true
+  metrics:
+    enable:
+      # Enable specific metric categories
+      jvm: true
+      system: true
+      http: true
+      process: true
+      redis: true
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+        spring.cloud.gateway.requests: true  # Gateway-specific metrics
+      percentiles:
+        http.server.requests: 0.5, 0.95, 0.99
+        spring.cloud.gateway.requests: 0.5, 0.95, 0.99
+      slo:
+        http.server.requests: 10ms,50ms,100ms,200ms,500ms,1s,2s
+    tags:
+      application: afristays-api-gateway
+      service: api-gateway
+      environment: ${SPRING_PROFILES_ACTIVE:development}
+    export:
+      prometheus:
+        enabled: true
+        descriptions: true
+        step: 30s  # Metrics collection interval
 
 # Rate limiting and DDoS protection configuration
 afristays:
   rate-limit:
-    requests-per-minute: 60
-    requests-per-hour: 1000
-    requests-per-day: 10000
-    burst-capacity: 10
-    burst-refill-rate: 5
-    ddos-threshold-per-minute: 100
-    ddos-threshold-per-second: 10
-    ddos-block-duration-minutes: 15
-    max-consecutive-errors: 10
-    max-same-endpoint-requests: 50
-    suspicious-pattern-block-minutes: 5
+    requests-per-minute: 120    # Increased for genuine users
+    requests-per-hour: 2000     # More reasonable for active users
+    requests-per-day: 15000     # Allow for heavy legitimate usage
+    burst-capacity: 20          # Allow short bursts (page loads with multiple resources)
+    burst-refill-rate: 10       # Faster refill for legitimate traffic
+    ddos-threshold-per-minute: 200  # Higher threshold before DDoS detection
+    ddos-threshold-per-second: 15   # Allow for legitimate API bursts
+    ddos-block-duration-minutes: 5  # Shorter blocks to reduce impact on legitimate users
+    max-consecutive-errors: 15      # More tolerant of errors
+    max-same-endpoint-requests: 100 # Allow pagination and repeated legitimate requests
+    suspicious-pattern-block-minutes: 2  # Shorter suspicious pattern blocks
     whitelisted-ips:
       - "127.0.0.1"
       - "::1"
     blacklisted-ips: []
     exempt-paths:
       - "/actuator/health"
+      - "/actuator/prometheus"
+      - "/actuator/metrics"
+      - "/actuator/info"
+      - "/actuator/gateway"
       - "/api/v1/auth/health"
       - "/admin/security/health"
 
