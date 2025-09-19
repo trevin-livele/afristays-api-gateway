@@ -60,8 +60,9 @@ public class AfristaysApiGatewayApplication {
                 .route("portal-switch-service", r -> r
                         .path("/api/portal-switch/**")
                         .filters(f -> f
+                                .rewritePath("/api/portal-switch/(?<remaining>.*)", "/api/v1/${remaining}")
                                 .addRequestHeader("X-Gateway", "API-Gateway"))
-                        .uri("http://portal-switch-service:31307"))
+                        .uri("http://afristays-portal-switch:31307"))
 
                 // Health check route (gateway's own health)
                 .route("health", r -> r

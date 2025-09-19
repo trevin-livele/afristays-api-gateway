@@ -113,6 +113,12 @@ public class DDoSProtectionFilter implements GlobalFilter, Ordered {
     private Mono<Void> handleBlockedRequest(ServerWebExchange exchange, String clientIp, String reason) {
         ServerHttpResponse response = exchange.getResponse();
         
+        // Add CORS headers for blocked requests
+        response.getHeaders().add("Access-Control-Allow-Origin", "https://staykenyaadmin.vercel.app");
+        response.getHeaders().add("Access-Control-Allow-Credentials", "true");
+        response.getHeaders().add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+        response.getHeaders().add("Access-Control-Allow-Headers", "*");
+
         // Log security event
         securityLogger.warn("BLOCKED_REQUEST | {} | {} | {} | {} | {}", 
                            LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME),

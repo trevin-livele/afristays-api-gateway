@@ -17,13 +17,18 @@ spring:
         cors-configurations:
           '[/**]':
             allowedOriginPatterns:
+              - "https://staykenyaadmin.vercel.app"
+              - "https://*.vercel.app"
               - "http://localhost:*"
               - "https://localhost:*"
               - "http://server.trevtechltd.com:*"
               - "https://server.trevtechltd.com:*"
               - "https://www.afristays.com"
               - "https://afristays.com"
-              - "https://staykenyaadmin.vercel.app:*"
+              - "https://staykenyaadmin.vercel.app"
+              - "https://*.vercel.app"
+              - "https://staykenyaadmin:*"
+              - "http://staykenyaadmin:*"
             allowedMethods:
               - GET
               - POST
@@ -31,11 +36,17 @@ spring:
               - DELETE
               - OPTIONS
               - PATCH
+              - HEAD
             allowedHeaders: "*"
             allowCredentials: true
             exposedHeaders:
               - Authorization
               - Content-Type
+              - X-Requested-With
+              - Accept
+              - Origin
+              - Access-Control-Request-Method
+              - Access-Control-Request-Headers
             maxAge: 3600
   # Redis configuration for rate limiting
   data:
@@ -74,17 +85,17 @@ management:
       show-details: always
       show-components: always
     info:
-      enabled: true
+      access:
     prometheus:
-      enabled: true
+      access: unrestricted
     metrics:
-      enabled: true
+      access: unrestricted
     gateway:
-      enabled: true  # Spring Cloud Gateway specific metrics
+      access: unrestricted
     env:
-      enabled: true
+      access: unrestricted
     configprops:
-      enabled: true
+      access: unrestricted
   metrics:
     enable:
       # Enable specific metric categories
@@ -100,17 +111,16 @@ management:
       percentiles:
         http.server.requests: 0.5, 0.95, 0.99
         spring.cloud.gateway.requests: 0.5, 0.95, 0.99
-      slo:
-        http.server.requests: 10ms,50ms,100ms,200ms,500ms,1s,2s
     tags:
       application: afristays-api-gateway
       service: api-gateway
       environment: ${SPRING_PROFILES_ACTIVE:development}
-    export:
-      prometheus:
+  prometheus:
+    metrics:
+      export:
         enabled: true
         descriptions: true
-        step: 30s  # Metrics collection interval
+        step: 30s
 
 # Rate limiting and DDoS protection configuration
 afristays:
